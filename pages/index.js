@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
 
   return (
-    <div className='bg-blue-400'>
+    <div className='0'>
       <Navbar />
     </div>
   )
