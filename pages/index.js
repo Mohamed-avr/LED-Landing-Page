@@ -11,6 +11,8 @@ export default function Home() {
     <div className='0'>
       <Navbar />
       <Banner/>
+           <Navbar />
+      <Banner/>
     </div>
   )
 }
