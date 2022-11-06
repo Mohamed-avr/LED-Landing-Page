@@ -3,12 +3,15 @@ import Image from "next/image";
 export default function Banner() {
   return (
     <section className="mt-14">
+      <div className=" absolute  top-0 left-0  ">
+         <Image src={'/backgroundBanner.png'} width={1200} height={200} alt={''}  />
+      </div>
+
       <div className="flex justify-center items-center px-20">
         {/*  left  */}
         <div className=" w-2/4 h-[30rem] flex justify-center space-y-6 items-start  flex-col">
           <h3 className="text-7xl  capitalize w-[36rem] font-bold">
             the best <span className="text-primary ">
-              
               defense
             </span> against
           </h3>
@@ -26,7 +29,9 @@ export default function Banner() {
           </button>
         </div>
         {/*  right */}
-        <div className=" w-2/5 bg-blue-500 h-[30rem] "></div>
+        <div className=" w-2/5  h-[30rem] flex justify-center items-start align-middle ">
+          <Image src={'/Visual.png'} width={300} height={400} alt={'heroRightPicture'} />
+        </div>
       </div>
     </section>
   );
