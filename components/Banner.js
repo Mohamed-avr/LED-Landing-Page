@@ -9,14 +9,14 @@ export default function Banner() {
 
       <div className="flex justify-center sm:flex-row flex-col items-center sm:px-20  px-10 ">
         {/*  left  */}
-        <div className=" sm:w-2/4 w-full  sm:h-[30rem] h-[20rem] flex justify-center sm:space-y-6 space-y-4 items-center  flex-col">
+        <div className=" sm:w-2/4 w-full  sm:h-[30rem] h-[20rem] flex justify-center sm:space-y-8 space-y-4 sm:items-start items-center  flex-col">
           <h3 className="sm:text-7xl sm:text-left  text-center text-3xl capitalize  font-bold">
             the best <span className="text-primary ">
               defense
             </span> against
           </h3>
           <p className="text-gray-300 text-xl"> viruses , germs & bacteria </p>
-          <button className="bg-primary px-2 pr-4 py-2 rounded-full flex justify-between items-center ">
+          <button className="bg-primary  px-2 pr-4 py-2 rounded-full flex justify-between items-center ">
             <div className="bg-white/30  p-2 rounded-full space-x-2 mr ">
               <Image
                 src={"/cart.png"}
