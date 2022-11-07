@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className="mt-14">
-      <div className=" absolute  top-0 left-0  ">
-         <Image src={'/backgroundBanner.png'} width={1200} height={200} alt={''}  />
+    <section className="mt-14 relative overflow-hidden  ">
+      <div className=" absolute  sm:top-10 top-[20rem] -right-10  ">
+         <Image src={'/itemsViruses.png'} width={150} height={150} alt={'viruess-icons'}  />
       </div>
 
-      <div className="flex justify-center items-center px-20">
+      <div className="flex justify-center sm:flex-row flex-col items-center sm:px-20  px-10 ">
         {/*  left  */}
-        <div className=" w-2/4 h-[30rem] flex justify-center space-y-6 items-start  flex-col">
-          <h3 className="text-7xl  capitalize w-[36rem] font-bold">
+        <div className=" sm:w-2/4 w-full  sm:h-[30rem] h-[20rem] flex justify-center sm:space-y-6 space-y-4 items-center  flex-col">
+          <h3 className="sm:text-7xl sm:text-left  text-center text-3xl capitalize  font-bold">
             the best <span className="text-primary ">
               defense
             </span> against
@@ -29,7 +29,10 @@ export default function Banner() {
           </button>
         </div>
         {/*  right */}
-        <div className=" w-2/5  h-[30rem] flex justify-center items-start align-middle ">
+        <div className=" absolute right-0  -z-10 -top-[2rem]  w-[35rem] h-[35rem]  flex justify-center items-center  ">
+          <Image src={'/gradientCircle.png'} width={600} height={600} alt={'blue-cycle'} />
+        </div>
+        <div className=" sm:w-2/5  sm:h-[30rem] h-[25rem] flex justify-center items-start align-middle ">
           <Image src={'/Visual.png'} width={300} height={400} alt={'heroRightPicture'} />
         </div>
       </div>
