@@ -57,12 +57,12 @@ console.log(listName.map( (e) => Math.SQRT1_2))
   </ul>
 
   {/* animations icons */}
-  <div className="  animate-spin animate-ping bg-white w-10 h-10  absolute  top-20 left-20">
-    <Image src={''} alt={''} width={''} height={''} />
+  <div className=" animate-bounce  absolute  top-20 left-0">
+  <Image src={'/virus.png'} alt={'virus'} width={40} height={30} />
   </div>
 
-  <div className="  animate-bounce bg-white/40 w-10 h-10  absolute  bottom-24 right-40">
-    <Image src={''} alt={''} width={''} height={''} />
+  <div className="  animate-bounce hover w-10 h-10  absolute  bottom-24 right-40">
+    <Image src={'/virus2.png'} alt={'virus'} width={50} height={50} />
   </div>
 
 </div>:''}
