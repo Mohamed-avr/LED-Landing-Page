@@ -11,6 +11,10 @@ export default function Home() {
     <div>
       <Navbar />
       <Banner/>
+
+      <section>
+        hello here this is an empty section
+      </section>
     </div>
   )
 }
