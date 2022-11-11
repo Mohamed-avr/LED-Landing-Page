@@ -27,6 +27,10 @@ export default function Banner() {
             </div>
             <div className="ml-2 text-white/80 text-xs font-light uppercase">get your today</div>
           </button>
+
+          <div className="bg-blue-400 w-2/4 h-14 flex flex-row  ">
+          <Image src={'/gradientCircle.png'} width={600} height={600} alt={'blue-cycle'} />
+          <div></div> </div>
         </div>
         {/*  right */}
         <div className=" absolute right-0  -z-10 -top-[2rem]  w-[35rem] h-[35rem]  flex justify-center items-center  ">
