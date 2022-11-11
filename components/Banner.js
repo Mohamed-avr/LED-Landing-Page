@@ -4,16 +4,19 @@ export default function Banner() {
   return (
     <section className="mt-14 relative overflow-hidden  ">
       <div className=" absolute  sm:top-10 top-[20rem] -right-10  ">
-         <Image src={'/itemsViruses.png'} width={150} height={150} alt={'viruess-icons'}  />
+        <Image
+          src={"/itemsViruses.png"}
+          width={150}
+          height={150}
+          alt={"viruess-icons"}
+        />
       </div>
 
       <div className="flex justify-center sm:flex-row flex-col items-center sm:px-20  px-10 ">
         {/*  left  */}
         <div className=" sm:w-2/4 w-full  sm:h-[30rem] h-[20rem] flex justify-center sm:space-y-8 space-y-4 sm:items-start items-center  flex-col">
           <h3 className="sm:text-7xl sm:text-left  text-center text-3xl capitalize  font-bold">
-            the best <span className="text-primary ">
-              defense
-            </span> against
+            the best <span className="text-primary ">defense</span> against
           </h3>
           <p className="text-gray-300 text-xl"> viruses , germs & bacteria </p>
           <button className="bg-primary  px-2 pr-4 py-2 rounded-full flex justify-between items-center ">
@@ -25,19 +28,65 @@ export default function Banner() {
                 alt={"cart-icon"}
               />
             </div>
-            <div className="ml-2 text-white/80 text-xs font-light uppercase">get your today</div>
+            <div className="ml-2 text-white/80 text-xs font-light uppercase">
+              get your today
+            </div>
           </button>
 
-          <div className="bg-blue-400 w-2/4 h-14 flex flex-row  ">
-          <Image src={'/gradientCircle.png'} width={600} height={600} alt={'blue-cycle'} />
-          <div></div> </div>
+          <div className=" w-2/4 h-14 flex   ">
+            <div className=" flex">
+              <Image src={"/stars.svg"} width={60} height={100} alt={"stars"} />
+              <div>
+                <div className="ml-2" >
+                  <h5 className="text-xl font-bold"> 4.6</h5>
+                  <h6 className="text-sm font-medium text-gray-400 " > rating</h6>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row">
+              <div className="users ml-6">
+                <Image
+                  src={"/person1.png"}
+                  width={50}
+                  height={50}
+                  alt={"persona"}
+                />
+              </div>
+              <div className="users -ml-3">
+                <Image
+                  src={"/person2.png"}
+                  width={50}
+                  height={50}
+                  alt={"persona"}
+                />
+              </div>
+              <div className="users -ml-3">
+                <Image
+                  src={"/person3.png"}
+                  width={50}
+                  height={50}
+                  alt={"persona"}
+                />
+              </div>
+            </div>
+          </div>
         </div>
         {/*  right */}
         <div className=" absolute right-0  -z-10 -top-[2rem]  w-[35rem] h-[35rem]  flex justify-center items-center  ">
-          <Image src={'/gradientCircle.png'} width={600} height={600} alt={'blue-cycle'} />
+          <Image
+            src={"/gradientCircle.png"}
+            width={600}
+            height={600}
+            alt={"blue-cycle"}
+          />
         </div>
         <div className=" sm:w-2/5  sm:h-[30rem] h-[25rem] flex justify-center items-start align-middle ">
-          <Image src={'/Visual.png'} width={300} height={400} alt={'heroRightPicture'} />
+          <Image
+            src={"/Visual.png"}
+            width={300}
+            height={400}
+            alt={"heroRightPicture"}
+          />
         </div>
       </div>
     </section>
