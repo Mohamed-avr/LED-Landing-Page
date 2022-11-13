@@ -60,7 +60,7 @@ export default function Banner() {
                   alt={"persona"}
                 />
               </div>
-              <div className="users -ml-3">
+              <div className="users -ml-3"> 
                 <Image
                   src={"/person3.png"}
                   width={50}
@@ -72,7 +72,7 @@ export default function Banner() {
           </div>
         </div>
         {/*  right */}
-        <div className=" absolute right-0  -z-10 -top-[2rem]  w-[35rem] h-[35rem]  flex justify-center items-center  ">
+        <div className=" sm:mt-0 absolute right-0  -z-10 sm:-top-[2rem] top-[13rem] sm:right-24   sm:w-[35rem] sm:h-[35rem]  flex justify-center items-center  ">
           <Image
             src={"/gradientCircle.png"}
             width={600}
