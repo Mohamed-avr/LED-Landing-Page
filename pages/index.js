@@ -9,8 +9,8 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
-      <Banner/>
+      <Navbar key={1} />
+      <Banner key={2}/>
     </div>
   )
 }

@@ -9,7 +9,10 @@ module.exports = {
       colors:{
         'primary':'#FF401B',
         'texts':'#212121',
-      }
+      },
+      // fontFamily : {
+      //   'body': ['ui-sans-serif']
+      // }
     },
   },
   plugins: [],

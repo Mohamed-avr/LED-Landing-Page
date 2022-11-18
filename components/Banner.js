@@ -1,6 +1,22 @@
 import Image from "next/image";
+import { useState , useRef} from "react";
+
 
 export default function Banner() {
+
+  // js workshop
+   const [button , setButton] = useState(false);
+   
+  const accessRef = useRef();
+
+
+  function handelingChanges() {
+   setButton( button === false ? true : false  );
+   console.log(button)
+  }
+
+
+
   return (
     <section className="mt-14 relative overflow-hidden  ">
       <div className=" absolute  sm:top-10 top-[20rem] -right-10  ">
@@ -18,8 +34,13 @@ export default function Banner() {
           <h3 className="sm:text-7xl sm:text-left  text-center text-3xl capitalize  font-bold">
             the best <span className="text-primary ">defense</span> against
           </h3>
-          <p className="text-gray-300 text-xl"> viruses , germs & bacteria </p>
-          <button className="bg-primary  px-2 pr-4 py-2 rounded-full flex justify-between items-center ">
+          <p className="text-gray-300 text-xl"> viruses , germs & bacteria </p> 
+
+          { button ? 
+            <button 
+           onClick={handelingChanges}
+           ref={accessRef} 
+           className="bg-primary  px-2 pr-4 py-2 rounded-full flex justify-between items-center ">
             <div className="bg-white/30  p-2 rounded-full space-x-2 mr ">
               <Image
                 src={"/cart.png"}
@@ -29,16 +50,35 @@ export default function Banner() {
               />
             </div>
             <div className="ml-2 text-white/80 text-xs font-light uppercase">
-              get your today
+              please wait
             </div>
           </button>
+           :
+           <button 
+               onClick={handelingChanges}
+           ref={accessRef} 
+           className="bg-primary  px-2 pr-4 py-2 rounded-full flex justify-between items-center ">
+            <div className="bg-white/30  p-2 rounded-full space-x-2 mr ">
+              <Image
+                src={"/cart.png"}
+                width={"22"}
+                height={"22"}
+                alt={"cart-icon"}
+              />
+            </div>
+            <div className="ml-2 text-white/80 text-xs font-light uppercase">
+              get yours now
+            </div>
+          </button>
+          }
+          
 
-          <div className=" w-2/4 h-14 flex   ">
+          <div className=" sm:w-2/4 h-14 flex  ">
             <div className=" flex">
               <Image src={"/stars.svg"} width={60} height={100} alt={"stars"} />
               <div>
                 <div className="ml-2" >
-                  <h5 className="text-xl font-bold"> 4.6</h5>
+                  <h5 className="text-xl font-bold sm:text-xl "> 4.6</h5>
                   <h6 className="text-sm font-medium text-gray-400 " > rating</h6>
                 </div>
               </div>
