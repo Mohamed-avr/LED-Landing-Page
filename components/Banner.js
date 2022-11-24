@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState , useRef} from "react";
+import SectionTwo from "./SectionTwo";
 
 
 export default function Banner() {
@@ -129,6 +130,8 @@ export default function Banner() {
           />
         </div>
       </div>
-    </section>
+      {/*   */} 
+      <SectionTwo/>
+     </section>
   );
 }
