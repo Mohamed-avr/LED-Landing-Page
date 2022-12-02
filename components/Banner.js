@@ -28,7 +28,6 @@ export default function Banner() {
           alt={"viruess-icons"}
         />
       </div>
-
       <div className="flex justify-center sm:flex-row flex-col items-center sm:px-20  px-10 ">
         {/*  left  */}
         <div className=" sm:w-2/4 w-full  sm:h-[30rem] h-[20rem] flex justify-center sm:space-y-8 space-y-4 sm:items-start items-center  flex-col">
