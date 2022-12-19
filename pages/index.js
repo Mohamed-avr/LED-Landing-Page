@@ -7,17 +7,6 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  let word ;
-    function SmallToLarge (word) {
-      if(word === typeof String ) {
-        let ConvrtSting = word.toUpperCase();
-      console.log(ConvrtSting)
-      } else {
-        console.log(' you should innter a string value')
-      }
-  }
-
-  SmallToLarge('hello there')
 
   return (
     <div>
