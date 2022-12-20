@@ -1,3 +1,8 @@
+import Carousel from "./Carousel";
+
+
+
+
 export default function SectionTwo() {
   return (
     <div className="flex justify-center sm:flex-row flex-col items-center sm:px-20  px-10 mt-16">
@@ -12,7 +17,9 @@ export default function SectionTwo() {
           porta in. Enim cursus tempus, arcu gravida at.
         </p>
       </div>
-      <div className="h-[28rem] w-[45rem] bg-blue-700 ">hello</div>
+      <div className="h-[22rem] w-[45rem] bg-green-700/5 overflow-hidden">
+         <Carousel/>
+      </div>
     </div>
   );
 }
