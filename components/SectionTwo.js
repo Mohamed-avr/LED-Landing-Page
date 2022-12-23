@@ -17,7 +17,7 @@ export default function SectionTwo() {
           porta in. Enim cursus tempus, arcu gravida at.
         </p>
       </div>
-      <div className="h-[22rem] w-[45rem] bg-green-700/5 overflow-hidden">
+      <div className="h-[22rem] w-[45rem]  overflow-hidden">
          <Carousel/>
       </div>
     </div>
