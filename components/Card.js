@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image'
 
-const Card = () => {
+const Card = (props) => {
     return (
-        <div className='w-[300px] h-[400px] bg-blue-100 rounded-3xl '>
+        <div key={props.sendPro} className='w-[300px] h-[400px] bg-blue-100 rounded-xl overflow-hidden  '>
             <div>
-                <Image src={'/Visual-1.jpg'} alt='image carousel' height={'400'} width={'300'} />
+                <Image src={'/seco.jpg'} alt='image carousel' height={'400'} width={'300'} />
             </div>
             <div className='px-2'>
                 <h3 className='mt-3 text-xl font-medium '> Highly Extensible </h3>

@@ -11,21 +11,27 @@ const Carousel = () => {
          // ready 
         }
      } , [emblaApi] )
+ 
 
+     const ObjectIDs = {
+        idOne : 1 , 
+        idTow : 2 , 
+        idThree : 3 , 
+
+     }
     return (
-        <div className=' -ml-[25rem]  h-auto w-[35rem] flex justify-start  ' ref={emblaRef} >
+        <div key={0} className=' -ml-[25rem]  h-auto w-[35rem] flex justify-start  ' ref={emblaRef} >
             <div className=" flex justify-start  items-start ">
                 <article className="  w-[20rem] h-[34rem] "> 
-                <Card/>
+                <Card sendPro={ObjectIDs.idOne}  />
                  </article>
+
                  <article className="  w-[20rem] h-[34rem] "> 
-                <Card/>
+                <Card sendPro={ObjectIDs.idTow } />
                  </article>
-                 <article className="  w-[20rem] h-[34rem] "> 
-                <Card/>
+                 <article className="  w-[20rem] h-[34rem] ">   
+                <Card sendPro={ObjectIDs.idThree} />
                  </article>
-                {/* <article className=" w-[25rem] h-36 bg-slate-400 ">Slide 2</article>
-                <article className=" w-[25rem] h-36 bg-slate-500 ">Slide 3</article> */}
             </div>
         </div>
     );
